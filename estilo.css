@@ -5,10 +5,6 @@
 h1{
     /*color:rgb(11, 11, 109);*/
 }
-table{
-    border: 1px solid black;
-}
-tr{
-    border-top: 1px solid black;
+table tr{
     border: 1px solid black;
 }
