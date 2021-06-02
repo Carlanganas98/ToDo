@@ -29,9 +29,11 @@ td{
     border-bottom: 5px solid rgb(20, 20, 20);
     padding: 15px;
 }
+/*
 tr:hover td{
     background-color: rgb(156, 156, 156);
 }
+*/
 h1{
     float:left;
 }
