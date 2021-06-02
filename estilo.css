@@ -1,7 +1,10 @@
+/*:default{
+    background-color: black;
+    
+}*/
 h1{
     color:rgb(11, 11, 109);
 }
 table{
-    border-color: black;
-    border: 1mm;
+    border: 1px solid black;
 }
