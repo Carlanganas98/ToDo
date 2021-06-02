@@ -2,10 +2,12 @@ body{
     background-color: rgb(20, 20, 20);
     color: whitesmoke;
     margin:auto;
+    font-family: Arial;
 }
 table{
     border-left: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
+    border-radius: 10px;
     background-color: rgb(40, 40, 40);
     text-align: left;
     width: 90%;
@@ -15,7 +17,7 @@ table{
 th{
     width: 100px;
     height: 30px;
-    background-color: blue;
+    background-color: rgb(87, 85, 85);
     border-top: 5px solid rgb(20, 20, 20);
     border-bottom: 5px solid rgb(20, 20, 20);
     padding: 15px;
@@ -27,19 +29,9 @@ td{
     border-bottom: 5px solid rgb(20, 20, 20);
     padding: 15px;
 }
-
-/*
-tr th{
-    height: 30px;
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
-    border-radius: 10;
-    border-collapse: collapse;
+tr:hover td{
+    background-color: rgb(156, 156, 156);
 }
-tr td{
-    height: 30px;
-    border-top: 1px solid whitesmoke;
-    border-bottom: 1px solid whitesmoke;
-    border-radius: 10;
-    border-collapse: collapse;
-}*/
+h1{
+    float:left;
+}
