@@ -1,15 +1,34 @@
-/*:default{
-    background-color: black;
-    
-}*/
-h1{
-    /*color:rgb(11, 11, 109);*/
+body{
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
 }
 table{
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
+    width: 80%;
+    margin:auto;
+
 }
-th, td{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+/*td, th{
+    width: 100px;
+    height: 30px;
+    border-bottom: solid whitesmoke;
+    border-top: solid whitesmoke;
     border-spacing: 0;
+    border-radius: 10;
+}*/
+tr th{
+    
+    height: 30px;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-radius: 10;
+    border-collapse: collapse;
+}
+tr td{
+    width: 100px;
+    height: 30px;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    border-radius: 10;
+    border-collapse: collapse;
 }
