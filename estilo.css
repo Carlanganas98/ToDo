@@ -2,13 +2,14 @@ body{
     background-color: #141414;
     color: whitesmoke;
     margin:auto;
-    font-family: Arial;
+    font-family: Tw Cen MT;
 }
+
+/*---------TABLA-------------*/
 table{
     border-left: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
     border-radius: 10px;
-    /*background-color: rgb(40, 40, 40);*/
     text-align: left;
     width: 90%;
     margin:auto;
@@ -32,25 +33,28 @@ td{
     border-bottom: 5px solid rgb(20, 20, 20);
     padding: 15px;
 }
-/*
-tr:hover td{
-    background-color: rgb(156, 156, 156);
-}
-*/
+
+/*---------------OTROS-----------------*/
+
 h1{
+    margin:auto;
     float:left;
+    padding: 10px;
 }
 #a{
     width: 1px;
 }
-#b{
+#botoncrea{
     background-color: rgb(0, 0, 0);
     color:whitesmoke;
     border-radius: 5px 5px 5px 5px;
+    font-family: Tw Cen MT;
+    font-size: 70%;
     height: 50px;
     width: 300px;
 }
-
-#grad{
-    background: linear-gradient(red, blue); 
+header{
+    width: 90%;
+    text-align: center;
+    margin:auto;
 }
