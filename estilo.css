@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(20, 20, 20);
+    background-color: #141414;
     color: whitesmoke;
     margin:auto;
     font-family: Arial;
@@ -8,7 +8,7 @@ table{
     border-left: 1px solid whitesmoke;
     border-top: 1px solid whitesmoke;
     border-radius: 10px;
-    background-color: rgb(40, 40, 40);
+    /*background-color: rgb(40, 40, 40);*/
     text-align: left;
     width: 90%;
     margin:auto;
@@ -21,10 +21,13 @@ th{
     border-top: 5px solid rgb(20, 20, 20);
     border-bottom: 5px solid rgb(20, 20, 20);
     padding: 15px;
+    font-family: Tw Cen MT;
 }
 td{
+    font-family: Tw Cen MT;
     width: 100px;
     height: 30px;
+    background-color: rgb(34, 34, 34);
     border-top: 5px solid rgb(20, 20, 20);
     border-bottom: 5px solid rgb(20, 20, 20);
     padding: 15px;
@@ -46,4 +49,8 @@ h1{
     border-radius: 5px 5px 5px 5px;
     height: 50px;
     width: 300px;
+}
+
+#grad{
+    background: linear-gradient(red, blue); 
 }
