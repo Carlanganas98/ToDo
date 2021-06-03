@@ -1,15 +1,15 @@
 header{
     color: rgb(255, 239, 212);
-    background: linear-gradient(to right, black, grey);
     margin:auto;
     font-family: Tw Cen MT;
     border-radius: 10px 10px 10px 10px;
 }
 body{
     color: rgb(255, 229, 185);
-    background: rgb(19, 19, 19);
     margin:auto;
     font-family: Tw Cen MT;
+    background: rgb(8, 8, 8);
+    
 }
 
 /*---------TABLA-------------*/
@@ -18,6 +18,7 @@ table{
     width: 90%;
     margin:auto;
     border-collapse: collapse;
+    background: rgb(22, 22, 22);
 }
 th{
     width: 100px;
@@ -29,8 +30,8 @@ td{
     font-family: Tw Cen MT;
     width: 100px;
     height: 30px;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(114, 114, 114);
+    border-top: 1px solid rgb(92, 92, 92);
     padding: 15px;
 }
 #selectores{
@@ -52,14 +53,14 @@ h2{
     float:center;
 }
 #botoncrea{
-    background-color: rgb(255, 238, 0);
-    background: linear-gradient(to right, red, yellow);
-    color:rgb(0, 0, 0);
+    background: linear-gradient(to right, rgb(10, 10, 10), rgb(37, 37, 37));
+    color:rgb(245, 229, 178);
     border-radius: 5px 5px 5px 5px;
     font-family: Tw Cen MT;
     font-size: 70%;
-    height: 30%;
-    width: 40%;
+    padding: 15px;
+    height: 80%;
+    width: 10%;
 }
 header{
     width: 90%;
