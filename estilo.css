@@ -53,6 +53,7 @@ h1{
 h2{
     margin:auto;
     float:center;
+    margin-top: 1%;
 }
 #botoncrea{
     background: linear-gradient(to right, rgb(0, 183, 255), rgb(60, 252, 60));
