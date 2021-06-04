@@ -1,13 +1,13 @@
 header{
-    color: rgb(255, 239, 212);
+    color: rgb(0, 0, 0);
     margin:auto;
     font-family: Tw Cen MT;
 }
 body{
-    color: rgb(255, 229, 185);
+    color: rgb(0, 0, 0);
     margin:auto;
     font-family: Tw Cen MT;
-    background: rgb(8, 8, 8);
+    background: rgb(255, 255, 255);
     
 }
 
@@ -17,7 +17,7 @@ table{
     width: 90%;
     margin:auto;
     border-collapse: collapse;
-    background: rgb(22, 22, 22);
+    background: rgb(238, 238, 238);
 }
 th{
     width: 100px;
@@ -29,8 +29,8 @@ td{
     font-family: Tw Cen MT;
     width: 100px;
     height: 30px;
-    border-bottom: 1px solid rgb(114, 114, 114);
-    border-top: 1px solid rgb(92, 92, 92);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
     padding: 15px;
 }
 #selectores{
@@ -52,8 +52,8 @@ h2{
     float:center;
 }
 #botoncrea{
-    background: linear-gradient(to right, rgb(10, 10, 10), rgb(37, 37, 37));
-    color:rgb(245, 229, 178);
+    background: linear-gradient(to right, rgb(0, 183, 255), rgb(60, 252, 60));
+    color:rgb(255, 255, 255);
     border-radius: 5px 5px 5px 5px;
     font-family: Tw Cen MT;
     font-size: 70%;
