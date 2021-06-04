@@ -57,6 +57,16 @@ class App extends Component {
         this.setState({allTasks: allTasks});
     }
 
+    setPrior(id, prioridad){
+        allTasks = allTasks.map(function(t){
+            if(t.id == id) {
+                t.prioridad = prioridad;
+            }
+            return t;
+        });
+        this.setState({allTasks: allTasks});
+    }
+
     updateItem(id, tarea, prioridad, status) {
 
     }
@@ -70,7 +80,8 @@ class App extends Component {
         <${DelTsk} delFunct="${this.deleteItems.bind(this)}" />
         <${CompleteTsk} compFunct="${this.completeItems.bind(this)}" />
         <${TablaToDo} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" 
-        setselec="${this.setSelecionado.bind(this)}" />
+        setselec="${this.setSelecionado.bind(this)}" 
+        setprior="${this.setPrior.bind(this)}" />
         </main>`
     }
 }
