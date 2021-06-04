@@ -5,17 +5,21 @@ class TablaToDo extends Component {
     constructor(props) {
         super(props);
         this.state = {getFunct: props.getFunct, addFunct: props.addFunct};
-        this.htmlv = null;
+        console.log("CREATED TABLE");
+    }
+
+    shouldComponentUpdate(nextProps, nextState){
+        console.log("before render table");
+        console.log(nextState);
     }
 
     render() {
         var set = this.props.setselec;
         console.log("rendertabla");
-        console.log(this.state.getFunct());
         let filas = this.props.getFunct().map(function(t) {
             return html`
             <${Fila} tarea="${t.tarea}" prioridad="${t.prioridad}" status="${t.status}" 
-            numero="${t.id}" setselec="${set}" />`
+            numero="${t.id}" setselec="${set}" inicial="${t.seleccionado}" />`
         })
         return html`<table>
         <tr>

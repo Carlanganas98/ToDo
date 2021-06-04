@@ -19,19 +19,18 @@ class Fila extends Component {
         console.log("set filaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         console.log(e)
         console.log(this.state.setselec);
-        this.state.setselec(this.state.id, e.target.checked);
+        this.props.setselec(this.props.numero, e.target.checked);
     }
 
     render() {
-        console.log(this.props.setselec);
         console.log("renderfila");
         return html`
         <tr>
-            <td class="selectores"><input type="checkbox" name="sel" value="${this.state.seleccionado ? 'on':'off'}" 
+            <td class="selectores"><input type="checkbox" checked="${this.props.inicial}" 
             onchange="${this.setfila.bind(this)}" /></td>
-            <td>${this.state.tarea}</td>
-            <td>${this.state.prioridad}</td>
-            <td>${this.state.status}</td>
+            <td>${this.props.tarea}</td>
+            <td>${this.props.prioridad}</td>
+            <td>${this.props.status}</td>
             <td class="chstatus">
                 <select name="...">
                     <option value="...">...</option>

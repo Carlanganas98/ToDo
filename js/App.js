@@ -27,25 +27,22 @@ class App extends Component {
     }
 
     deleteItems() {
-        console.log("delitems");
         allTasks = allTasks.filter(function(t){
             if(!t.seleccionado) {
                 return t;
             }
         });
         
-        this.setState({allTasks: allTasks}, () => console.log(allTasks));
+        this.setState({allTasks: allTasks},() => this.forceUpdate());
     }
 
     setSelecionado(id, seleccionado) {
-        console.log("setselec");
         allTasks = allTasks.map(function(t){
             if(t.id == id) {
                 t.seleccionado = seleccionado;
             }
             return t;
         });
-        console.log(allTasks);
         this.setState({allTasks: allTasks});
     }
 
