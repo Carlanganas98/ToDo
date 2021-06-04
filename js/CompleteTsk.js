@@ -6,7 +6,7 @@ class CompleteTsk extends Component {
     }
 
     render() {
-        return html`<a id="botoncompleta">Complete</a>`
+        return html`<button>Complete</button>`
     }
 }
 

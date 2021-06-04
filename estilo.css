@@ -65,10 +65,16 @@ h2{
     height: 80%;
     width: 10%;
 }
-#nuevoT{
+#dropdown{
     background: whitesmoke;
+    z-index: 10;
     width: 30%;
 }
+
+.escondido{
+    visibility: hidden;
+}
+
 header{
     width: 90%;
     text-align: center;

@@ -6,7 +6,7 @@ class DelTsk extends Component {
     }
 
     render() {
-        return html`<a id="botondel">Delete</a>`
+        return html`<button>Delete</button>`
     }
 }
 

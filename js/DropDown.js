@@ -3,11 +3,12 @@ import { html, Component } from 'https://unpkg.com/htm/preact/standalone.module.
 class DropDown extends Component {
     constructor(props) {
         super(props);
+        this.state = {escondido: props.escondido}
     }
 
     render() {
         return html`<br />
-        <section id="nuevoT">
+        <section id="dropdown" className=${!this.state.escondido ? null : "escondido"}>
             <input type="text" name="tarea" placeholder="Escriba la tarea a añadir"/>
             <select name="prio">
                 <option value="High">High</option>
@@ -15,10 +16,11 @@ class DropDown extends Component {
                 <option value="Low">Low</option>
             </select>
         <br />
-        <input type="submit" value="New task"/>
-        <a href="#">New Task</a>
+        <input type="submit" value="Save"/>
+        <button>Cancel</button>
         </section>`
     }
+
 }
 
 export default DropDown;
