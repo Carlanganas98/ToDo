@@ -1,6 +1,6 @@
 import { html, Component } from 'https://unpkg.com/htm/preact/standalone.module.js';
 
-class CompleteTsk extends Component {
+class DelTsk extends Component {
     constructor(props) {
         super(props);
     }

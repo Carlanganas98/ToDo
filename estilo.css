@@ -36,10 +36,10 @@ td{
     border-top: 1px solid rgb(255, 255, 255);
     padding: 15px;
 }
-#selectores{
+.selectores{
     width: 1%;
 }
-#chstatus{
+.chstatus{
     width: 5%;
 }
 

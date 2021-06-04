@@ -6,7 +6,7 @@ class BotonCrea extends Component {
     }
 
     render() {
-        return html`<a id="botoncrea">New Task</a>`
+        return html`<h2><button onclick="nuevaTarea()" id="botoncrea">creaTask</button></h2>`
     }
 }
 
