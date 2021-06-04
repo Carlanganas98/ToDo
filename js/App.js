@@ -41,6 +41,7 @@ class App extends Component {
             if(t.seleccionado) {
                 t.status = "Completed";
             }
+            t.seleccionado = false;
             return t;
         });
         this.setState({allTasks: allTasks});
