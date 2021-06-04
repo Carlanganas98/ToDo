@@ -3,7 +3,7 @@ import { html, Component } from 'https://unpkg.com/htm/preact/standalone.module.
 class DropDown extends Component {
     constructor(props) {
         super(props);
-        this.state={nomtar: "", esconder: props.esconder, prioridad: "High"};
+        this.state={nomtar: "", esconder: props.esconder, prioridad: "High", getFunct: props.getFunct, addFunct: props.addFunct};
     }
 
     render() {
@@ -30,12 +30,9 @@ class DropDown extends Component {
         console.log(this.state);
         console.log("savetsk");
         if(this.state.nomtar != "") {
-            totalTasks.push({
-                tarea: this.state.nomtar,
-                prioridad: this.state.prioridad,
-                status: "Pending"
-            });
+            this.props.addFunct(this.state.nomtar, this.state.prioridad, "Pending");
         }
+        console.log(this.props.getFunct());
         this.canceltsk();
     }
     canceltsk() {
