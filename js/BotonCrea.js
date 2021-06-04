@@ -3,13 +3,10 @@ import { html, Component } from 'https://unpkg.com/htm/preact/standalone.module.
 class BotonCrea extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-           pulsado: props.pulsado
-        }
     }
 
     render() {
-        return html`<h2><button onclick="${this.state.pulsado}" id="botoncrea">creaTask</button></h2>`
+        return html`<h2><button onclick="${this.props.pulsado}" id="botoncrea">creaTask</button></h2>`
     }
 }
 

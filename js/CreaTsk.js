@@ -5,17 +5,16 @@ import DropDown from './DropDown.js';
 class CreaTsk extends Component {
     constructor(props) {
         super(props);
-        this.state= {escondido: true}
+        this.state= {escondido: true};
     }
-
+    
     render() {
-        return html`<${BotonCrea}  pulsado=${this.mostrarDD.bind(this)} /> 
+        return html`<${BotonCrea}  pulsado=${this.toggleDropDown.bind(this)} /> 
             <${DropDown} escondido="${this.state.escondido}" />`
     }
 
-    mostrarDD(e) {
-        console.log("mostrardd");
-        this.setState({escondido: false});
+    toggleDropDown(e) {
+        this.setState({escondido: !this.state.escondido});
     }
 }
 
