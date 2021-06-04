@@ -22,6 +22,10 @@ class Fila extends Component {
         this.props.setselec(this.props.numero, e.target.checked);
     }
 
+    cambiaprio() {
+        
+    }
+
     render() {
         console.log("renderfila");
         return html`
@@ -32,7 +36,7 @@ class Fila extends Component {
             <td>${this.props.prioridad}</td>
             <td>${this.props.status}</td>
             <td class="chstatus">
-                <select name="...">
+                <select name="..." onchange=${this.cambiaprio}>
                     <option value="...">...</option>
                     <option value="High">High</option>
                     <option value="Medium">Medium</option>
