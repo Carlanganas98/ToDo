@@ -16,11 +16,12 @@ class TablaToDo extends Component {
     render() {
         var set = this.props.setselec;
         var pri = this.props.setprior;
+        var cambia = this.props.cambiatarea;
         console.log("rendertabla");
         let filas = this.props.getFunct().map(function(t) {
             return html`
             <${Fila} tarea="${t.tarea}" prioridad="${t.prioridad}" status="${t.status}" 
-            numero="${t.id}" setselec="${set}" inicial="${t.seleccionado}" pri="${pri}" />`
+            numero="${t.id}" setselec="${set}" inicial="${t.seleccionado}" pri="${pri}" cambia="${cambia}" />`
         })
         return html`<table>
         <tr>

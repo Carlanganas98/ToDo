@@ -67,8 +67,14 @@ class App extends Component {
         this.setState({allTasks: allTasks});
     }
 
-    updateItem(id, tarea, prioridad, status) {
-
+    modifTarea(id, tarea) {
+        allTasks = allTasks.map(function(t){
+            if(t.id == id) {
+                t.tarea = tarea;
+            }
+            return t;
+        });
+        this.setState({allTasks: allTasks});
     }
 
     render() {
@@ -81,7 +87,8 @@ class App extends Component {
         <${CompleteTsk} compFunct="${this.completeItems.bind(this)}" />
         <${TablaToDo} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" 
         setselec="${this.setSelecionado.bind(this)}" 
-        setprior="${this.setPrior.bind(this)}" />
+        setprior="${this.setPrior.bind(this)}" 
+        cambiatarea="${this.modifTarea.bind(this)}" />
         </main>`
     }
 }
