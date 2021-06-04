@@ -3,7 +3,7 @@ import { html, Component } from 'https://unpkg.com/htm/preact/standalone.module.
 class DropDown extends Component {
     constructor(props) {
         super(props);
-        this.state={nomtar: ""};
+        this.state={nomtar: "", esconder: props.esconder};
     }
 
     render() {
@@ -17,7 +17,7 @@ class DropDown extends Component {
             </select>
         <br />
         <button onclick="${this.savetsk.bind(this)}">Save</button>
-        <button onclick="${this.canceltsk}">Cancel</button>
+        <button onclick="${this.canceltsk.bind(this)}">Cancel</button>
         </section>`
     }
     guardatext(e) {
@@ -26,11 +26,13 @@ class DropDown extends Component {
     savetsk() {
         console.log(this.state);
         console.log("savetsk");
+        this.canceltsk();
     }
     canceltsk() {
         var cajatexto = document.getElementsByName("tarea")[0];
         cajatexto.value = "";
         console.log("canc");
+        this.state.esconder();
     }
 }
 

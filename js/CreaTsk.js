@@ -10,11 +10,12 @@ class CreaTsk extends Component {
     
     render() {
         return html`<${BotonCrea}  pulsado=${this.toggleDropDown.bind(this)} /> 
-            <${DropDown} escondido="${this.state.escondido}" />`
+            <${DropDown} escondido="${this.state.escondido}" esconder=${this.toggleDropDown.bind(this)} />`
     }
 
     toggleDropDown(e) {
         this.setState({escondido: !this.state.escondido});
+        console.log("toggledd");
     }
 }
 
