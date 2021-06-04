@@ -15,7 +15,7 @@ class TablaToDo extends Component {
             <th>STATUS</th>
             <th class="chstatus"></th>
         </tr>
-        <${Fila} tarea="hola" prioridad="igh" status="Peding"/>
+        <${Fila} tarea="hola" prioridad="High" status="Peding"/>
     </table>`
     }
 }
