@@ -7,7 +7,7 @@ class CompleteTsk extends Component {
     }
 
     render() {
-        return html`<button>Complete</button>`
+        return html`<button onclick="${this.props.compFunct}">Complete</button>`
     }
 }
 

@@ -36,6 +36,16 @@ class App extends Component {
         this.setState({allTasks: allTasks},() => this.forceUpdate());
     }
 
+    completeItems() {
+        allTasks = allTasks.map(function(t){
+            if(t.seleccionado) {
+                t.status = "Completed";
+            }
+            return t;
+        });
+        this.setState({allTasks: allTasks});
+    }
+
     setSelecionado(id, seleccionado) {
         allTasks = allTasks.map(function(t){
             if(t.id == id) {
@@ -57,7 +67,7 @@ class App extends Component {
         </header>
         <main>
         <${DelTsk} delFunct="${this.deleteItems.bind(this)}" />
-        <${CompleteTsk} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" />
+        <${CompleteTsk} compFunct="${this.completeItems.bind(this)}" />
         <${TablaToDo} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" 
         setselec="${this.setSelecionado.bind(this)}" />
         </main>`
