@@ -4,7 +4,7 @@ import CreaTsk from './CreaTsk.js';
 import DelTsk from './DelTsk.js';
 import TablaToDo from './TablaToDo.js';
 import TotalTsk from './TotalTsk.js';
-import * as SW from '../sw.js';
+import * as SW from './storage.js';
 
 var allTasks = JSON.parse(SW.loadTasks()) || [];
 class App extends Component {
