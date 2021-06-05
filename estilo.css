@@ -14,7 +14,7 @@ body{
 /*---------TABLA-------------*/
 table{
     text-align: left;
-    width: 95%;
+    width: 95vw;
     margin:auto;
     border-collapse: collapse;
     background: whitesmoke;
