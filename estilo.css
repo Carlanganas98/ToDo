@@ -31,6 +31,7 @@ th{
 td{
     font-family: Tw Cen MT;
     width: 100px;
+    max-width: 100px;
     height: 30px;
     border-bottom: 1px solid rgb(2, 2, 2);
     border-top: 1px solid rgb(2, 2, 2);
