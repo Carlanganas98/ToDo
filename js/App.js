@@ -90,8 +90,10 @@ class App extends Component {
         <${CreaTsk} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" />
         </header>
         <main>
+        <div id="control">
         <${DelTsk} delFunct="${this.deleteItems.bind(this)}" />
         <${CompleteTsk} compFunct="${this.completeItems.bind(this)}" />
+        </div>
         <${TablaToDo} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" 
         setselec="${this.setSelecionado.bind(this)}" 
         setprior="${this.setPrior.bind(this)}" 

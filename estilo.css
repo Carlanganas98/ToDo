@@ -97,9 +97,19 @@ h2{
 
 /*---------------BOTONES DELETE Y COMPLETE-----------------*/
 #del, #complete{
-    border-radius: 5% 10% 5% 10%;
-    border: solid black;
-    width: 30%;
+    background: linear-gradient(to right, rgb(0, 183, 255), rgb(60, 252, 60));
+    color:rgb(255, 255, 255);
+    border-radius: 5% 5% 5% 5%;
+    font-family: Tw Cen MT;
+    font-size: 1.2em;
+    width: 25vw;
+    height: 5vh;
+    margin-left: 5vw;
+}
+
+#control{
+    display: flex;
+    width: 100vw;
 }
 
 header{
