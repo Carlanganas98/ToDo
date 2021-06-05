@@ -110,7 +110,8 @@ h2{
 #control{
     display: flex;
     width: 100vw;
-    height: minmax(30px, 5vh);
+    min-height: 30px;
+    max-height: 5vh;
 }
 
 header{
