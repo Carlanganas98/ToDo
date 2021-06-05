@@ -4,10 +4,10 @@ import CreaTsk from './CreaTsk.js';
 import DelTsk from './DelTsk.js';
 import TablaToDo from './TablaToDo.js';
 import TotalTsk from './TotalTsk.js';
+import * as SW from './sw.js';
 
-var allTasks = [];
+var allTasks = JSON.parse(SW.loadTasks()) || [];
 class App extends Component {
-    
     constructor(props) {
         super(props);
         this.state = {
@@ -36,7 +36,6 @@ class App extends Component {
                 return t;
             }
         });
-        
         this.setState({allTasks: allTasks},() => this.forceUpdate());
     }
 
@@ -79,6 +78,10 @@ class App extends Component {
             return t;
         });
         this.setState({allTasks: allTasks});
+    }
+
+    shouldComponentUpdate(nextProps, nextState){
+        SW.saveTasks(JSON.stringify(allTasks));
     }
 
     render() {

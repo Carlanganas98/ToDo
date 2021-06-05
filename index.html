@@ -7,6 +7,18 @@
         <link rel="StyleSheet" href="estilo.css">
         <link rel="manifest" href="manifest.json">
         <script defer src="js/gui.js" type="module"></script>
+        <script defer>
+            // Comprobar si el navegador ejecuta service workers
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('js/sw.js').then(reg => {
+                        console.log('Todo bien:', reg)
+                    }, function (err) {
+                        console.log('Fallo:', err)
+                    })
+                })
+            }
+            </script>
     </head>
     <body>
         <!-- Body de la app, lo que si puede ver el usuario -->

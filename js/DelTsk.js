@@ -7,7 +7,7 @@ class DelTsk extends Component {
     }
 
     render() {
-        return html`<button onclick="${this.props.delFunct}">Delete</button>`
+        return html`<button id="del" onclick="${this.props.delFunct}">Delete</button>`
     }
 }
 

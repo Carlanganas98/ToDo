@@ -43,13 +43,16 @@ td{
     width: 5%;
 }
 
-/*---------------OTROS-----------------*/
+/*---------------TITULO-----------------*/
 
 h1{
     margin:auto;
     float:left;
     padding: 10px;
 }
+
+/*---------------BOTON CREA-----------------*/
+
 h2{
     margin:auto;
     float:center;
@@ -65,15 +68,23 @@ h2{
     height: 80%;
     width: 10%;
 }
+
+/*---------------DROP DOWN-----------------*/
 #dropdown{
     background: whitesmoke;
     z-index: 10;
-    width: 30%;
-    float: center;
+    width: 30%;  
 }
-
 .escondido{
     visibility: hidden;
+}
+
+
+/*---------------BOTONES DELETE Y COMPLETE-----------------*/
+#del, #complete{
+    border-radius: 5% 10% 5% 10%;
+    border: solid black;
+    width: 30%;
 }
 
 header{
