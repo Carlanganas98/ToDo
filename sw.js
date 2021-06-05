@@ -16,7 +16,8 @@ let urls_to_cache = [
     './estilo.css',
     './index.html',
     './img/icon3.png',
-    './sw.js'
+    './sw.js',
+    './manifest.json'
 ]
 
 self.addEventListener('install', function(e){
