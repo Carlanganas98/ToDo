@@ -17,7 +17,6 @@ class App extends Component {
     }
 
     getItems(){
-        console.log(this.state.allTasks.length);
         return this.state.allTasks;
     }
 
