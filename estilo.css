@@ -22,7 +22,7 @@ table{
 th{
     width: 100px;
     height: 30px;
-    padding: 15px;
+    padding: 10px;
     font-family: Tw Cen MT;
     
     background: rgb(32, 32, 32);
@@ -35,7 +35,7 @@ td{
     height: 30px;
     border-bottom: 1px solid rgb(2, 2, 2);
     border-top: 1px solid rgb(2, 2, 2);
-    padding: 15px;
+    padding: 10px;
 }
 .selectores{
     width: 10%;
@@ -101,6 +101,7 @@ h2{
     background: linear-gradient(to right, rgb(255, 153, 0), rgb(223, 36, 36));
     color:rgb(255, 255, 255);
     border-radius: 5% 5% 5% 5%;
+    border: 1px red;
     font-family: Tw Cen MT;
     font-size: 1.2em;
     width: 25vw;
