@@ -103,13 +103,14 @@ h2{
     font-family: Tw Cen MT;
     font-size: 1.2em;
     width: 25vw;
-    height: 5vh;
+    height: 100%;
     margin-left: 5vw;
 }
 
 #control{
     display: flex;
     width: 100vw;
+    height: minmax(30px, 5vh);
 }
 
 header{
