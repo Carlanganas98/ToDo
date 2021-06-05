@@ -79,7 +79,7 @@ h2{
     position: absolute;
     top: 12vh;
     right: 15vw; 
-    width: 20vw;
+    
 }
 
 /* #dropdown input, #dropdown select, #dropdown button {
@@ -87,7 +87,7 @@ h2{
 } */
 
 #dropdown * {
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 .escondido{
