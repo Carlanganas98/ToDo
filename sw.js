@@ -1,7 +1,5 @@
 
 
-
-
 export function loadTasks() {
     return localStorage.getItem("tasks");
 }
