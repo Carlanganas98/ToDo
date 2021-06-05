@@ -7,7 +7,8 @@ class TotalTsk extends Component {
     }
 
     render() {
-        return html`<h1>Total Tasks: <span id="numTareas"></span></h1>`
+        console.log();
+        return html`<h1>Total Tasks: <span id="numTareas">${this.props.getNumTsk()}</span></h1>`
     }
 }
 

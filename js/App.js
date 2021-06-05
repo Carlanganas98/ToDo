@@ -17,7 +17,12 @@ class App extends Component {
     }
 
     getItems(){
+        console.log(this.state.allTasks.length);
         return this.state.allTasks;
+    }
+
+    getNumTsk() {
+        return this.state.allTasks.length;
     }
 
     addItem(tarea, prioridad, status){
@@ -79,7 +84,7 @@ class App extends Component {
 
     render() {
         return html`<header>
-        <${TotalTsk} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" />
+        <${TotalTsk} getNumTsk="${this.getNumTsk.bind(this)}" />
         <${CreaTsk} getFunct="${this.getItems.bind(this)}" addFunct="${this.addItem.bind(this)}" />
         </header>
         <main>
